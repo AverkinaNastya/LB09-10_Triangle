@@ -9,6 +9,7 @@ public:
 	Triangle& operator =(const Triangle&);
 	Triangle(const char*); // конструктор пустого (нулевого) треугольника
 	~Triangle(); // деструктор
+	friend bool TriaInTria(Triangle, Triangle);
 	Point Get_v1() const
 	{
 		return v1;

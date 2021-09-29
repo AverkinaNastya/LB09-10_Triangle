@@ -16,7 +16,7 @@ public:
 	Point operator +(Point&);
 	Point operator -(Point&);
 	double Length() const; // определяет длину вектора точки в полярной системе координат
-	ORIENT Classify(Point&, Point&) const; // определяет положение точки относительно вектора, заданного двумя точками
+	ORIENT Classify(Point, Point) const; // определяет положение точки относительно вектора, заданного двумя точками
 	bool InTriangle(Triangle&) const; // определяет, находится ли точка внутри треугольника
 public:
 	double x, y;
